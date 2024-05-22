@@ -1,0 +1,100 @@
+
+    .left-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #29303B;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .left-navigation-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .left-navigation-menu li {
+      margin-bottom: 10px;
+    }
+    
+    .left-navigation-menu li a {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .left-navigation-menu li a:hover {
+      background-color: #4B5563;
+    }
+    
+    .left-navigation-menu li a:before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #777;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .left-navigation-menu li:nth-child(1) a:before {
+      background-color: #E36049;
+    }
+    
+    .left-navigation-menu li:nth-child(2) a:before {
+      background-color: #8BC34A;
+    }
+    
+    .left-navigation-menu li:nth-child(3) a:before {
+      background-color: #03A9F4;
+    }
+    
+    .left-navigation-menu li:nth-child(4) a:before {
+      background-color: #FFC107;
+    }
+    
+    .left-navigation-menu li:nth-child(5) a:before {
+      background-color: #9C27B0;
+    }
+    
+    @media (max-width: 768px) {
+      .left-navigation {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 20px;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      
+      .logo {
+        margin-right: 20px;
+      }
+      
+      .left-navigation-menu {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .left-navigation-menu li {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+    

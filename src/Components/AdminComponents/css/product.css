@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-form {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.search-form input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-form button i {
+    margin-right: 5px;
+}
+
+/* Customize the button style */
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Customize the input style */
+.search-form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #007bff;
+}
+
+/* AddProductForm.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.limitText {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+max-width: 70px;
+}
+.hover-text {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 54px; 
+    width: 100%; 
+
+  }
+  
+
+  .hover-text:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+    z-index: 1000; /* Giá trị z-index để đảm bảo hiển thị trên các phần tử khác */
+  }
+  
+  .hover-text:hover:before {
+    display: block;
+  }
+  .table-container {
+    max-height:500px; 
+    min-height:500px; 
+
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+  }
+  
+  .pagination-wrapper {
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Đảm bảo phần tử chiếm toàn bộ chiều rộng của màn hình */
+    background-color: white; /* Màu nền của phần tử */
+    padding: 10px; /* Khoảng cách padding để phân tách với nội dung khác */
+  }
+  
+
+  
